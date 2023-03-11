@@ -1,0 +1,50 @@
+<section class="agency pricing price-bg" id="plan" [ngStyle]="{'background-image': 'url(assets/images/agency/price/bg.png)'}">
+    <div class="container">
+        <div class="row justify-content-center" >
+            <div class="col-md-4" style="text-align:center; vertical-align: middle; background-color: white; padding: 20px; margin: 10px; border:1px solid white; border-radius: 5px;box-shadow: 6px -7px 30px 5px rgba(0,0,0,0.25);">
+                <div class="center-text center-content">
+                    <div class="format-container center-content">
+                        <h1 class="text-uppercase" style="margin:5px;">
+                            <span class="">Our services</span>
+                        </h1>
+                        <!-- <div class="format-head-text align-content-center" style="padding:5px;">
+                            <h2 class="about-font-header" style="padding:5px;">What is included</h2>
+                        </div>
+                        <div class="format-sub-text align-content-center">
+                            <p class="about-para">We provide many techniqual assets and tools for your business</p>
+                        </div> -->
+                        <!-- <a href="#" class=" btn btn-default btn-gradient text-white">view more</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <owl-carousel-o [options]="pricingcarouselOptions" class="pricing-slider price-margin">
+                    <ng-container *ngFor="let price of pricing">
+                        <ng-template carouselSlide class="item">
+                            <div class="price-container shadows">
+                                <div class="price-feature-container">
+                                    <div class="feature-text">
+                                        <span class="flaticon-{{price.icon}} feature-icon"></span>
+                                        <h3>{{price.package}}</h3>
+                                        <hr class="set-border">
+                                    </div>
+                                    <div class="price-features font-primary">
+                                        <h5 class="price-feature">{{price.feature1}}</h5>
+                                        <h5 class="price-feature">{{price.feature2}}</h5>
+                                        <h5 class="price-feature">{{price.feature3}}</h5>
+                                        <h5 class="price-feature">{{price.feature4}}</h5>
+                                    </div>
+                                    <!-- <div class="price-value">
+                                        <h6 class="price">$<span
+                                                class="large">{{price.price}}</span>/month</h6>
+                                    </div> -->
+                                    <!-- <a href="javascript:void(0)" class="btn btn-default btn-white">{{price.btn}}</a> -->
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>

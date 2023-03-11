@@ -11,6 +11,8 @@ import { HomeHeaderComponent } from './home-header/home-header.component';
 import { HomeInfoBreakComponent } from './home-info-break/home-info-break.component';
 import { HomeNavComponent } from './home-nav/home-nav.component';
 import { HomeServicesComponent } from './home-services/home-services.component';
+import { HomeServicesScrollComponent } from './home-services-scroll/home-services-scroll.component';
+import { HomeContactComponent } from './home-contact/home-contact.component';
 
 
 
@@ -24,7 +26,9 @@ import { HomeServicesComponent } from './home-services/home-services.component';
     HomeServicesComponent,
     HomeCounterComponent,
     HomeInfoBreakComponent,
-    HomeTeamComponent
+    HomeTeamComponent,
+    HomeServicesScrollComponent,
+    HomeContactComponent
   ],
   imports: [
     CommonModule,

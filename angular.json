@@ -20,6 +20,7 @@
             "outputPath": "dist/3VA",
             "index": "src/index.html",
             "main": "src/main.ts",
+            
             "polyfills": [
               "zone.js"
             ],

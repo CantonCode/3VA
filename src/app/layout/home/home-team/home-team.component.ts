@@ -21,12 +21,12 @@ export class HomeTeamComponent implements OnInit {
     { 
       img:"assets/images/team-matthew.jpg",
       name:"Matthew Cunnane",
-      designation:"UX/Design Specilist"
+      designation:"UX/Design Specialist"
      },
      { 
-      img:"assets/images/event/l3-4.png",
-      name:"Rory Man",
-      designation:"AI Specilist"
+      img:"assets/images/team-rory1.jpg",
+      name:"Rory Tyrell",
+      designation:"AI Specialist"
      },
   ]
   

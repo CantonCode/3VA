@@ -15,7 +15,7 @@ export class HomeServicesScrollComponent implements OnInit {
   pricing = [
     { 
       icon:"rocket-ship",
-      package:"Techniqual",
+      package:"Technical",
       feature1:"Full-Stack Design & Development",
       feature2:"Backend Integration",
       feature3:"Artifical Intelligence",

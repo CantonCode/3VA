@@ -1,3 +1,4 @@
+import { HomeFooterComponent } from './home-footer/home-footer.component';
 import { HomeComponent } from './home.component';
 import { HomeTeamComponent } from './home-team/home-team.component';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,8 @@ import { HomeNavComponent } from './home-nav/home-nav.component';
 import { HomeServicesComponent } from './home-services/home-services.component';
 import { HomeServicesScrollComponent } from './home-services-scroll/home-services-scroll.component';
 import { HomeContactComponent } from './home-contact/home-contact.component';
+import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -28,13 +31,16 @@ import { HomeContactComponent } from './home-contact/home-contact.component';
     HomeInfoBreakComponent,
     HomeTeamComponent,
     HomeServicesScrollComponent,
-    HomeContactComponent
+    HomeContactComponent,
+    GetInTouchComponent,
+    HomeFooterComponent
   ],
   imports: [
     CommonModule,
     CarouselModule,
     SharedModule,
     NgbModule,
+    ReactiveFormsModule
  
   ]
 })

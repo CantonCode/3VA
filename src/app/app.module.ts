@@ -15,12 +15,13 @@ import { HomeCounterComponent } from './layout/home/home-counter/home-counter.co
 import { HomeInfoBreakComponent } from './layout/home/home-info-break/home-info-break.component';
 import { HomeTeamComponent } from './layout/home/home-team/home-team.component'
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HomeFooterComponent } from './layout/home/home-footer/home-footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    
+  
   ],
   imports: [
     HomeModule,

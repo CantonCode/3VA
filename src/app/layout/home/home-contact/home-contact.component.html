@@ -1,19 +1,13 @@
-<footer class="event contact set-relative bg bg-img bg-about p-b-0" id="contact"  [ngStyle]="{'background-image': 'url(assets/images/agency/price/bg.png)'}">
-    <div class="container p-b-100">
+<footer class="event contact set-relative bg  bg-about p-b-0" id=""  [ngStyle]="{'background-image': 'url(assets/images/agency/price/bg.png)'}" style="">
+    <div class="container p-b-100" style="color:red">
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="title title3">
                     <div class="main-title">
-                        <h2 class=" text-white">Contact Us On:</h2>
-                        <br>
-                        <h2 class=" text-white">cantoncodez@gmail.com</h2>
+                        <h2 class=" text-white p-8" >Contact Us: info@3va.studio</h2>
+                        
                     </div>
-                    <!-- <div class="sub-title">
-                        <P class="text-white">Register now and reserve your seat for this
-                            <span>year's unice,</span> the largest <span>web development</span> and online marketing
-                            <span>conference in UK,</span> covering everything you need to know in order to develop a
-                            successful online business.</P>
-                    </div> -->
+                    
                 </div>
             </div>
             <!-- <div class="col-xl-5 offset-xl-1 col-md-6 p-r-0 map">
@@ -24,43 +18,34 @@
             </div> -->
             <!-- <div class="col-xl-8 col-md-12" style="border-radius: 5px;">
                 <div class="bg-white" style=" border-radius: 5px;">
-
-                    <form>
+                   
+                    <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
                         <div class="row">
                             <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="name">Name *</label>
-                                    <input type="text" class="form-control" id="name">
+                                <div class="form-group" >
+                                    <label for="name" style="color:#1d3276">Name *</label>
+                                    <input type="text" class="form-control" formControlName="Name" id="name">
                                 </div>
                             </div>
+                            
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <label for="Phone">Phone *</label>
-                                    <input type="text" class="form-control" id="Phone">
+                                    <label for="EmailAddress" placeholder="Enter email"  style="color:#1d3276">Email *</label>
+                                    <input type="text" class="form-control" formControlName="Email" id="Email">
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="Email">Email *</label>
-                                    <input type="text" class="form-control" id="Email">
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="Subject">Subject *</label>
-                                    <input type="text" class="form-control" id="Subject">
-                                </div>
-                            </div>
+
                         </div>
                         <div class="form-group">
-                            <label for="Message">Message *</label>
-                            <input type="text" class="form-control" id="Message">
+                            <label for="Message" style="color:#1d3276;padding-bottom: 1rem;">Message *</label>
+                            <textarea formControlName="Message" rows="4" cols="50">
+                            </textarea>
                         </div>
 
-                        <a class="btn btn-default primary-btn m-0-auto " style="color: blue;">send</a>
+                        <a class=" btn btn-secondary" style="background-color:white;color: #1d3276;padding: 10px 40px 10px 40px;border-radius: 25px;">Send!</a>
                     </form>
-                </div> -->
-            <!-- </div> -->
+                </div>
+            </div> -->
         </div>
     </div>
     <img src="assets/images/plane.png" alt="" class="set-abs top-0 plane2">

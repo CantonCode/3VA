@@ -12,6 +12,8 @@ export class HomeServicesScrollComponent implements OnInit {
   ngOnInit() {
   }
 
+
+
   pricing = [
     { 
       icon:"rocket-ship",

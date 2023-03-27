@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { ColorScssService } from 'src/app/shared/service/color-scss.service';
+import { ColorScssService } from '../../shared/service/color-scss.service';
 
 @Component({
   selector: 'app-home',

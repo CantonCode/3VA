@@ -4,7 +4,7 @@ import { HomeTeamComponent } from './home-team/home-team.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { SharedModule } from 'src/app/shared/shared.module';
+import { SharedModule } from '../../shared/shared.module'
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeContentComponent } from './home-content/home-content.component';
 import { HomeCounterComponent } from './home-counter/home-counter.component';
